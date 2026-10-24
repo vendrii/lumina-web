@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f7">
+  <meta name="description" content="Lumina — workspace Rekam Medis Elektronik klinik gigi.">
+  <title>Lumina | RME Klinik Gigi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://accounts.google.com/gsi/client" defer></script>
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Lumina beranda">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Lumina</span>
+      </a>
+      <span class="product-label">RME Klinik Gigi</span>
+    </header>
+
+    <section class="auth-card" aria-labelledby="pageTitle">
+      <div class="eyebrow">Ruang kerja klinik</div>
+      <h1 id="pageTitle">Perawatan yang lebih terhubung.</h1>
+      <p class="intro">Masuk dengan akun Gmail yang telah didaftarkan oleh administrator Lumina.</p>
+
+      <div class="sign-in-panel" id="signInPanel">
+        <div class="google-button-slot" id="googleButton"></div>
+        <p class="status" id="authStatus" role="status" aria-live="polite">Menyiapkan login aman…</p>
+      </div>
+
+      <section class="profile-panel" id="profilePanel" hidden aria-labelledby="welcomeTitle">
+        <div class="profile-icon" aria-hidden="true" id="profileInitial">L</div>
+        <div>
+          <div class="eyebrow">Akun terverifikasi</div>
+          <h2 id="welcomeTitle">Selamat datang</h2>
+          <p class="profile-email" id="profileEmail"></p>
+          <p class="profile-role" id="profileRole"></p>
+        </div>
+        <button class="secondary-button" id="signOutButton" type="button">Keluar</button>
+        <p class="status profile-status" id="profileStatus" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="security-note">
+        <span class="security-icon" aria-hidden="true">⌑</span>
+        <p>Data hanya dapat dibuka setelah identitas Google diverifikasi dan akun dinyatakan aktif oleh server Lumina.</p>
+      </div>
+    </section>
+
+    <footer class="footer">Lumina · Akses akun tercatat melalui sistem otorisasi klinik.</footer>
+  </main>
+</body>
+</html>
